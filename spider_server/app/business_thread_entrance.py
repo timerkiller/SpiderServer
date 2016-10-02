@@ -4,7 +4,7 @@ import threading
 
 from app import pool
 from app.config import serviceConfig
-from app.spider.spider_enterance import SpiderThread
+from app.spider.spider_entrance import SpiderThread
 
 
 class BusinessThreadEntrance(object):
