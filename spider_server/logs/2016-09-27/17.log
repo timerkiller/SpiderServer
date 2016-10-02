@@ -1,0 +1,6 @@
+<2016-09-27 17:23:50,009> WARNING/syncdb/handle, Line:24: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\core\management\commands\syncdb.py:24: RemovedInDjango19Warning: The syncdb command will be removed in Django 1.9
+  warnings.warn("The syncdb command will be removed in Django 1.9", RemovedInDjango19Warning)
+
+<2016-09-27 17:24:39,673> WARNING/syncdb/handle, Line:24: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\core\management\commands\syncdb.py:24: RemovedInDjango19Warning: The syncdb command will be removed in Django 1.9
+  warnings.warn("The syncdb command will be removed in Django 1.9", RemovedInDjango19Warning)
+

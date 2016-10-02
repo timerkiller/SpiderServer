@@ -1,0 +1,8 @@
+<2016-09-30 19:55:05,174> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 19:55:05,177> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 19:55:05,187> INFO/obd_model_operation/get_lastest_obd_info, Line:136: get obd inf objects :2
+<2016-09-30 19:55:05,190> INFO/obd_model_operation/get_lastest_obd_info, Line:138: distance_history :123142  drivetime_history: 4123414 oiluse_history: 23311

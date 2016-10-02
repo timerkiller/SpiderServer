@@ -1,0 +1,36 @@
+<2016-09-30 18:07:02,071> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:07:02,072> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:17,575> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:17,576> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:36,354> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:36,354> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:57,372> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:08:57,374> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:09:20,740> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:09:20,742> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:18:28,441> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 00:00:00) while time zone support is active.
+  RuntimeWarning)
+
+<2016-09-30 18:18:28,443> WARNING/__init__/get_prep_value, Line:1474: D:\Program Files (x86)\Python27\lib\site-packages\django-1.8.7-py2.7.egg\django\db\models\fields\__init__.py:1474: RuntimeWarning: DateTimeField ObdInfoModel.upload_time received a naive datetime (2016-09-30 23:59:59) while time zone support is active.
+  RuntimeWarning)
+
