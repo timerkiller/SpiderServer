@@ -1,6 +1,7 @@
 #coding=utf-8
 import re
 # 处理页面标签类
+import datetime
 class Tool:
     # 去除img标签,7位长空格
     removeImg = re.compile('<img.*?>| {7}|')
@@ -17,6 +18,9 @@ class Tool:
     # 将其余标签剔除
     removeExtraTag = re.compile('<.*?>')
 
+    #获取发布时间
+    releaseTime = re.compile('(\d{4}-\d{1,2}-\d{1,2}$)')
+
     @classmethod
     def replace(cls, dstStr):
         dstStr = re.sub(cls.removeImg, "", dstStr)
@@ -28,3 +32,23 @@ class Tool:
         dstStr = re.sub(cls.removeExtraTag, "", dstStr)
         # strip()将前后多余内容删除
         return dstStr.strip()
+
+    @classmethod
+    def getReleaseTime(cls,dstStr):
+        result = re.findall(cls.releaseTime,dstStr)
+        if result:
+            return result[0]
+        else:
+            return datetime.datetime.today().strftime('%Y-%m-%d')
+
+    @classmethod
+    def getStarScore(cls,dst_str):
+        pass
+
+    @classmethod
+    def getMovieType(cls,dst_str):
+        pass
+
+    @classmethod
+    def getMovieContent(cls,dst_str):
+        pass

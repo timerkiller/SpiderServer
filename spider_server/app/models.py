@@ -4,10 +4,12 @@ from __future__ import unicode_literals
 from django.db import models
 
 class MovieModel(models.Model):
-    title = models.CharField(verbose_name="标题", max_length=64, null=True, blank=True)
+    title = models.CharField(verbose_name="标题", max_length=128, null=True, blank=True)
     release_time = models.DateTimeField(verbose_name="发布时间", null=False, blank=False)
-    major_img_url = models.CharField(verbose_name="影片主图片", max_length=64, null=True, blank=True)
+    major_img_url = models.CharField(verbose_name="影片主图片", max_length=256, null=True, blank=True)
     moive_star_score = models.IntegerField(verbose_name="评分",null=True, blank=True)
+    moive_type = models.CharField(verbose_name="影片类型",max_length=64,null= False,blank=False)#比如科幻，悬疑，
+    movie_classify = models.CharField(verbose_name="影片类别",max_length=64,null=False,blank=False)#影片所属分类，是最新电影，首页推荐最新，首页迅雷资源等等
 
     class Meta:
         db_table = 'movie_list'
@@ -21,7 +23,7 @@ class MovieDetailModel(models.Model):
     title = models.CharField(verbose_name="标题",max_length=64,null=True,blank=True)
     release_time = models.DateTimeField(verbose_name="发布时间", null=False,blank=False)
     major_img_url = models.CharField(verbose_name="影片主图片",max_length=64,null=True,blank=True)
-    moive_star_score = models.IntegerField(verbose_name="评分",max_length=64,null=True,blank=True)
+    moive_star_score = models.IntegerField(verbose_name="评分",null=True,blank=True)
     content = models.CharField(verbose_name="影片介绍",max_length=64,null=True,blank=True)
     summary_img_url = models.CharField(verbose_name="内容概要视频截图",max_length=64,null=True,blank=True)
     ftp_url = models.CharField(verbose_name="ftp地址",max_length=64,null=True,blank=True)
@@ -34,8 +36,6 @@ class MovieDetailModel(models.Model):
 
         def __unicode__(self):
             return self.title
-
-
 
 
 # from django.contrib import admin
