@@ -2,9 +2,12 @@
 import re
 # 处理页面标签类
 import datetime
+import time
+from loglib.logApi import CSysLog
+from django.utils import timezone
 class Tool:
     # 去除img标签,7位长空格
-    removeImg = re.compile('<img.*?>| {7}|')
+    removeImg = re.compile('<img.*?>|  {7}|')
     # 删除超链接标签
     removeAddr = re.compile('<a.*?>|</a>')
     # 把换行的标签换为\n
@@ -37,18 +40,33 @@ class Tool:
     def getReleaseTime(cls,dstStr):
         result = re.findall(cls.releaseTime,dstStr)
         if result:
-            return result[0]
+            CSysLog.info(result[0])
+            releaseTime = datetime.datetime.strptime(result[0],"%Y-%m-%d")
+            return datetime.datetime(releaseTime.year,releaseTime.month,releaseTime.day)
         else:
-            return datetime.datetime.today().strftime('%Y-%m-%d')
+            CSysLog.error('get release time error')
+            return timezone.now()
 
     @classmethod
     def getStarScore(cls,dst_str):
-        pass
+        pattern = re.compile('(\d.\d)/.*? from')
+        result = re.findall(pattern,dst_str)
+        if(result):
+            CSysLog.info(result[0])
+            return float(result[0])
+        else:
+            return float('0.0')
 
     @classmethod
     def getMovieType(cls,dst_str):
-        pass
+        movie_type = re.compile('类.*?别　(.*?)<br />')
+        result = re.findall(movie_type,dst_str)
+        if result:
+            CSysLog.info(result[0])
+            return result[0]
+        else:
+            return '其他'
 
     @classmethod
     def getMovieContent(cls,dst_str):
-        pass
+        return cls.replace(dst_str)

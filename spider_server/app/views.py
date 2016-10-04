@@ -3,7 +3,7 @@ import json
 
 from django.http import HttpResponse
 
-from app.models import MovieDetailModel
+from app.models import MovieModel
 from utilapp.tools import CMyTools
 from app.database_operation.database_manager import DatabaseManager
 
@@ -22,8 +22,8 @@ def get_obd_info(request):
                 'historyDrivingTime':''         #历史家是时间
             }
 
-            intradayFuelConsumption,intradayDrivingDistance = DatabaseManager.get_obd_model_instance().get_intraday_fuel_and_mileage(deviceId,int(timeStamp))
-            lastObdInfo = DatabaseManager.get_obd_model_instance().get_lastest_obd_info(deviceId)
+            intradayFuelConsumption,intradayDrivingDistance = DatabaseManager.get_movie_model_instance().get_intraday_fuel_and_mileage(deviceId,int(timeStamp))
+            lastObdInfo = DatabaseManager.get_movie_model_instance().get_lastest_obd_info(deviceId)
             if(lastObdInfo != None and intradayFuelConsumption != None and intradayDrivingDistance != None):
                 responseData['intradayDrivingDistance']=str(intradayDrivingDistance)
                 responseData['intradayFuelConsumption']=str(intradayFuelConsumption)

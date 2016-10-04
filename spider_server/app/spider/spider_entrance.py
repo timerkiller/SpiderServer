@@ -26,14 +26,16 @@ class SpiderThread(object):
         爬虫运行体
         '''
         while cls.server_run_flag:
-            CSysLog.warn('in thread ')
             #第一次启动的时候，因为数据库里没数据，所以进行全网爬数据
             if cls.first_start:
                 cls.first_start = False
                 DyttSpider.start(0x01)
-
+                try:
+                    DyttSpider.write_to_database(DyttSpider.DataType.HOME_PAGE)
+                except Exception,e:
+                    CSysLog.info('write data to datebase error :%s ',e)
             #需要每隔一定时间去爬取相应的首页数据
-            time.sleep(2)
+            time.sleep(2000)
 
     @classmethod
     def start(cls):

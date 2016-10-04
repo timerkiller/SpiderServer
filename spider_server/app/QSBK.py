@@ -6,6 +6,8 @@ import urllib2
 import re
 import thread
 import time
+import chardet
+
 
 class QSBK(object):
 

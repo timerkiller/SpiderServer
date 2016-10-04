@@ -1,6 +1,6 @@
 #coding=utf-8
 import threading
-from app.models import MovieDetailModel,MovieModel
+from app.models import MovieModel
 from loglib.logApi import CSysLog
 from utilapp.tools import CMyTools
 from django.utils import timezone
@@ -32,7 +32,7 @@ class MovieModelOperation(object):
         :param arg:
         :return:
         '''
-        movie_detail_objects = MovieDetailModel.objects.filter(title=movie_info['title'])
+        movie_detail_objects = MovieModel.objects.filter(title=movie_info['title'])
         movie_objects  = MovieModel.objects.filter(title=movie_info['title'])
 
         if len(movie_detail_objects) > 0 or len(movie_objects):
@@ -46,7 +46,7 @@ class MovieModelOperation(object):
             new_movie.moive_star_score = movie_info['starScore']
             new_movie.save()
 
-            new_movie_detail = MovieDetailModel()
+            new_movie_detail = MovieModel()
             new_movie_detail.title=movie_info['title']
             new_movie_detail.release_time = movie_info['releaseTime']
             new_movie_detail.major_img_url = movie_info['majorPicUrl']
@@ -56,36 +56,40 @@ class MovieModelOperation(object):
             new_movie_detail.moive_detail = new_movie
             new_movie_detail.save()
 
-    def set_array_movies_data(self,movie_info_array):
+    def set_array_movies_data(self,movie_info_array,data_type):
         '''
         传入数组影片信息进行保存数据库
-        :param movie_info_array:
+        :param movie_info_array:影片详情列表,data_type:HomeData:0x01,LastestData:0x02,japan_korean_data:0x03,eur_amer_data:0x04
         :return:
         '''
+        CSysLog.info('prepare to write data to database')
         if len(movie_info_array) < 1:
             return False
+
+        if data_type == 0x01:
+            home_movies_objects = MovieModel.objects.filter(movie_classify=data_type)
+            if len(home_movies_objects) > 0:
+                CSysLog.info('delete home data')
+                home_movies_objects.delete()#首页数据更新需要先清空下原来的首页数据
+
         movie_objects = []
-        movie_detail_objects = []
         for movie_info in movie_info_array:
             new_movie = MovieModel()
+            CSysLog.info('before title %s'%(movie_info['title']))
             new_movie.title = movie_info['title']
-            new_movie.release_time = movie_info['releaseTime']
-            new_movie.major_img_url = movie_info['majorPicUrl']
-            new_movie.moive_star_score = movie_info['starScore']
+            new_movie.release_time = movie_info['release_time']
+            new_movie.major_img_url = movie_info['major_img_url']
+            new_movie.moive_star_score = movie_info['movie_star_score']
+            new_movie.moive_type = movie_info['movie_type']
+            new_movie.movie_classify = movie_info['movie_classify']
+            new_movie.movie_classify_child = movie_info['movie_classify_child']
+            new_movie.summary_img_url = movie_info['summary_img_url']
+            new_movie.content = movie_info['content']
+            new_movie.ftp_url = movie_info['ftp_url']
             movie_objects.append(new_movie)
-            new_movie_detail = MovieDetailModel()
-            new_movie_detail.title=movie_info['title']
-            new_movie_detail.release_time = movie_info['releaseTime']
-            new_movie_detail.major_img_url = movie_info['majorPicUrl']
-            new_movie_detail.moive_star_score = movie_info['starScore']
-            new_movie_detail.content = movie_info['content']
-            new_movie_detail.ftp_url = movie_info['ftpUrl']
-            new_movie_detail.moive_detail = new_movie
-            new_movie_detail.save()
-            movie_detail_objects.append(new_movie_detail)
 
         MovieModel.objects.bulk_create(movie_objects)
-        MovieDetailModel.objects.bulk_create(movie_detail_objects)
+        CSysLog.info('write data success')
         return True
 
     def update_data(self,movie_info):
@@ -120,7 +124,7 @@ class MovieModelOperation(object):
         :return:当日的油耗
         '''
         dt_start_time,dt_end_time = self.parse_timestamp(timestamp)
-        obd_info_objects = MovieDetailModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
+        obd_info_objects = MovieModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
         if len(obd_info_objects) > 0:
             intraday_total_mileage = 0
             for obd_info_object in obd_info_objects:
@@ -148,7 +152,7 @@ class MovieModelOperation(object):
         :return:
         '''
         dt_start_time, dt_end_time = self.parse_timestamp(timestamp)
-        obd_info_objects = MovieDetailModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
+        obd_info_objects = MovieModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
         if len(obd_info_objects) > 0:
             intraday_total_fuel_consumption = 0
             for obd_info_object in obd_info_objects:
@@ -173,7 +177,7 @@ class MovieModelOperation(object):
 
         dt_start_time, dt_end_time = self.parse_timestamp(timestamp)
         print dt_start_time,dt_end_time
-        obd_info_objects = MovieDetailModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
+        obd_info_objects = MovieModel.objects.filter(upload_time__range=(dt_start_time, dt_end_time), equipment_id=device_id)
         if len(obd_info_objects) > 0:
             intraday_total_fuel_consumption = 0
             intraday_total_mileage = 0
@@ -190,7 +194,7 @@ class MovieModelOperation(object):
         :param device_id: 目标OBD
         :return: 最新的obd model对象
         '''
-        obd_info_objects = MovieDetailModel.objects.filter(equipment_id=device_id)
+        obd_info_objects = MovieModel.objects.filter(equipment_id=device_id)
         if len(obd_info_objects) > 0:
             CSysLog.info('get obd inf objects :%d'%(len(obd_info_objects)))
             obd_object = obd_info_objects.order_by('upload_time')[0]

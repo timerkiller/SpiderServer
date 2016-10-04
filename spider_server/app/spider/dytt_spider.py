@@ -2,6 +2,8 @@
 import urllib2
 import urllib
 import re
+import chardet
+import time
 from app.config import Config
 from app.tool import Tool
 from loglib.logApi import CSysLog
@@ -50,10 +52,27 @@ class DyttSpider(object):
         :return: 返回获取到的网页信息
         '''
         try:
-            request = urllib2.Request(pageUrl, headers = cls.headers)
-            response = urllib2.urlopen(request)
-            pageCode = response.read()
-            return pageCode
+            fail_time = 0
+            while True:
+                try:
+                    if fail_time > 5:
+                        return None
+                    request = urllib2.Request(pageUrl, headers = cls.headers)
+                    response = urllib2.urlopen(request,None,3)
+                    pageCode = response.read()
+                    encodeType = chardet.detect(pageCode)['encoding']
+                    if encodeType == 'ISO-8859-2':
+                        pageCode = pageCode.decode('ISO-8859-2', 'ignore').encode('utf-8')
+                    elif encodeType == 'gbk' or encodeType == 'GBK':
+                        pageCode = pageCode.decode('gbk', 'ignore').encode('utf-8')
+                    elif encodeType == 'gb2312' or encodeType == 'GB2312':
+                        pageCode = pageCode.decode('gb2312', 'ignore').encode('utf-8')
+                    else:
+                        CSysLog.error('encode type not add %s'%(encodeType))
+                    return pageCode
+                except Exception,e:
+                    CSysLog.warn('get page error reason: %s'%(e))
+                    fail_time +=1
         except urllib2.URLError, e:
             if hasattr(e, "reason"):
                 print u"connect website faild", e.reason
@@ -85,22 +104,28 @@ class DyttSpider(object):
         :param url:
         :return:
         '''
+        CSysLog.info('URL:%s',url)
+
         pageCode = cls.getPage(url)
         if not pageCode:
             CSysLog.error( "load page failed....")
             return None
-        pattern = re.compile(Config.regex_lastest_movie_detail,re.S)
-        #这里还需要详细解析
-        items = re.findall(pattern, pageCode)
-        for item in items:
-            movie_detail = {}
-            movie_detail['title'] = Tool.replace(item[0])
-            movie_detail['releaseTime'] = Tool.replace(item[1])
-            movie_detail['majorPicUrl'] = Tool.replace(item[2])
-            movie_detail['content'] = Tool.replace(item[3])
-            movie_detail['summaryPicUrl'] = Tool.replace(item[4])
-            movie_detail['ftpUrl'] = Tool.replace(item[5])
-            return movie_detail#因为每个资源页面只有一项，所以直接返回第一个就可以了
+        try:
+            pattern = re.compile(Config.regex_lastest_movie_detail,re.S)
+            #这里还需要详细解析
+            items = re.findall(pattern, pageCode)
+            for item in items:
+                movie_detail = {}
+                movie_detail['title'] = Tool.replace(item[0])
+                movie_detail['releaseTime'] = Tool.replace(item[1])
+                movie_detail['majorPicUrl'] = Tool.replace(item[2])
+                movie_detail['content'] = item[3]
+                movie_detail['summaryPicUrl'] = Tool.replace(item[4])
+                movie_detail['ftpUrl'] = Tool.replace(item[5])
+                return movie_detail#因为每个资源页面只有一项，所以直接返回第一个就可以了
+        except:
+            CSysLog.info('regex parse failed')
+            return None
 
     @classmethod
     def get_lastest_all_movies_res(cls):
@@ -137,7 +162,7 @@ class DyttSpider(object):
     def print_all_movies_detail(cls,movie_list):
         CSysLog.info('movie_list len :%d'%(len(movie_list)))
         for item in movie_list:
-            CSysLog.info( 'Title:%s ReleaseTime:%s majorPicUrl:%s summaryPicUrl:%s FtpURL:%s'%(item['title'],item['releaseTime'],item['majorPicUrl'],item['summaryPicUrl'],item['ftpUrl']))
+            CSysLog.info( 'Title:%s ReleaseTime:%s majorPicUrl:%s summaryPicUrl:%s FtpURL:%s    \nContent: %s '%(item['title'],item['releaseTime'],item['majorPicUrl'],item['summaryPicUrl'],item['ftpUrl'],item['content']))
 
 
     @classmethod
@@ -153,10 +178,9 @@ class DyttSpider(object):
         data_type_array = ['lastest','classis']
         for data_type in data_type_array:
             cls.getHomePageUrls(Config.base_url,Config.regex_home_page_url[data_type],data_type)
-            cls.printHomePageUrls(data_type)
+            #cls.printHomePageUrls(data_type)
             cls.getHomePageMovieDetail(data_type)
-            cls.print_all_movies_detail(cls.index_movie_detail_items[data_type])
-            break
+            #cls.print_all_movies_detail(cls.index_movie_detail_items[data_type])
 
 
     @classmethod
@@ -168,10 +192,11 @@ class DyttSpider(object):
     def getHomePageMovieDetail(cls, data_type):
         for data in cls.index_urls[data_type]:
             url = Config.base_url + data[0]
-            CSysLog.info(url)
+            #CSysLog.info(url)
             result = cls.get_movie_detail_res(url)
             if not result:
                 CSysLog.error( 'get url :%s failed'%(url))
+                continue
             else:
                 cls.index_movie_detail_items[data_type].append(result)
 
@@ -204,14 +229,20 @@ class DyttSpider(object):
         if data_type == cls.DataType.HOME_PAGE:
             if len(cls.index_movie_detail_items) != 0:
                 result_data = cls.parse_index_movie_detail_item(cls.index_movie_detail_items)
-                DatabaseManager.get_movie_model_instance().set_array_movies_data(result_data)
+                DatabaseManager.get_movie_model_instance().set_array_movies_data(result_data,cls.DataType.HOME_PAGE)
             else:
                 CSysLog.error('No index data yet, please check the spider')
         elif data_type == cls.DataType.LASTEST_DATA_PAGE:
             if len(cls.movie_detail_items) != 0:
-                DatabaseManager.get_movie_model_instance().set_array_movies_data(cls.movie_detail_items)
+                DatabaseManager.get_movie_model_instance().set_array_movies_data(cls.movie_detail_items,cls.DataType.LASTEST_DATA_PAGE)
             else:
                 CSysLog.error('No lastest data yet, please check the spider')
+        elif data_type == cls.DataType.JP_KO_DATA_PAGE:
+            pass
+        elif data_type == cls.DataType.EUR_AMER_DATA_PAGE:
+            pass
+        else:
+            CSysLog.error('Data type error!!!!')
 
     @classmethod
     def parse_index_movie_detail_item(cls,movie_list):
@@ -223,12 +254,15 @@ class DyttSpider(object):
                 movie_detail['title'] = movie['title']
                 movie_detail['release_time'] = Tool.getReleaseTime(movie['releaseTime'])
                 movie_detail['major_img_url'] = movie['majorPicUrl']
-                movie_detail['moive_star_score'] = Tool.getStarScore(movie['content'])
-                movie_detail['moive_type'] = Tool.getMovieType(movie['content'])
-                movie_detail['movie_classify'] = data_type
+                movie_detail['movie_star_score'] = Tool.getStarScore(movie['content'])
+                movie_detail['movie_type'] = Tool.getMovieType(movie['content'])
+                movie_detail['movie_classify'] = 0x01
+                movie_detail['movie_classify_child'] = data_type
                 movie_detail['summary_img_url'] = movie['summaryPicUrl']
                 movie_detail['content'] = Tool.getMovieContent(movie['content'])
                 movie_detail['ftp_url'] = movie['ftpUrl']
+                result.append(movie_detail)
+        return result
 
 
     @classmethod
