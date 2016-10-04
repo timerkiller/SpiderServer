@@ -33,6 +33,8 @@ class Config(object):
     base_url = 'http://www.ygdy8.net'
     base_new_url = 'http://www.ygdy8.net/html/gndy/dyzz/list_23_'
     base_japan_korean_url =  'http://www.ygdy8.net/html/gndy/rihan/list_6_'
+    base_china_url = 'http://www.ygdy8.net/html/gndy/china/list_4_'
+    base_eur_ame_url = 'http://www.ygdy8.net/html/gndy/oumei/list_7_'
     base_tail_url = '.html'
     regex_home_page_url = {'lastest':'<td width="85%".*?<a href="/html/gndy/dyzz/index.html">.*?</a>.*?(/html/gndy/dyzz/.*?html).*?>(.*?)</a><br','classis':'<td width="85%".*?<a href="/html/gndy/index.html">.*?(/html/gndy/jddy/.*?html).*?>(.*?)</a><br'}
     regex_lastest_movie_url = '</table><table width="100%" border="0" cellspacing="0" cellpadding="0" class="tbspan" style="margin-top:6px">.*?<a href="(.*?)".*?"ulink">(.*?)</a>'

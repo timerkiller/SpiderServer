@@ -21,6 +21,8 @@ class Tool:
     # 将其余标签剔除
     removeExtraTag = re.compile('<.*?>')
 
+    removePonit = re.compile('&middot;')
+
     #获取发布时间
     releaseTime = re.compile('(\d{4}-\d{1,2}-\d{1,2}$)')
 
@@ -33,6 +35,7 @@ class Tool:
         dstStr = re.sub(cls.replacePara, "\n    ", dstStr)
         dstStr = re.sub(cls.replaceBR, "\n", dstStr)
         dstStr = re.sub(cls.removeExtraTag, "", dstStr)
+        dstStr = re.sub(cls.removePonit, ".", dstStr)
         # strip()将前后多余内容删除
         return dstStr.strip()
 

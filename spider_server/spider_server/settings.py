@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_api',
     'app',
 )
 
@@ -108,8 +110,8 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATIC_ROOT = join(ROOT_PATH, "static")
 STATIC_URL = '/static/'
 
-from app.business_thread_entrance import BusinessThreadEntrance
-try:
-    BusinessThreadEntrance.start()
-except:
-    pass
+# from app.business_thread_entrance import BusinessThreadEntrance
+# try:
+#     BusinessThreadEntrance.start()
+# except:
+#     pass

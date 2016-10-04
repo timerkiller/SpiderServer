@@ -24,6 +24,14 @@ class MovieModel(models.Model):
     def __unicode__(self):
         return self.title
 
+class FlagModel(models.Model):
+    catch_all_data_flag = models.BooleanField(verbose_name='全部数据',null=False,blank=False)
+
+    class Meta:
+        db_table = 'flag_table'
+        verbose_name = '数据开关'
+        verbose_name_plural = '数据开关'
+
 # class MovieDetailModel(models.Model):
 #     # TYPE_CHOICES = (('lastest', '最新影片'), ('classis', '经典影片'))
 #     # title = models.CharField(verbose_name="标题",max_length=64,null=True,blank=True)
