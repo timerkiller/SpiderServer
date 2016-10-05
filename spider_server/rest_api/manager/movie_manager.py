@@ -85,4 +85,4 @@ class MovieManager(object):
         elif type == cls.SortType.SORT_POPULAR:
             return 'popular'
         elif type == cls.SortType.SORT_STAR_SCORE:
-            return 'movie_star_score'
+            return '-moive_star_score'
