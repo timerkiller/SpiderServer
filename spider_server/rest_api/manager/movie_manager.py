@@ -48,7 +48,25 @@ class MovieManager(object):
 
     @classmethod
     def search(cls,request):
-        pass
+        if 'condition' in request.data:
+            condition = request.data['condition'].encode('utf-8')
+            search_movie_objects = MovieModel.objects.filter(title__contains=condition).order_by('release_time')
+            if len(search_movie_objects) > 0:
+                resp_data = {'result': 'ok', 'list_item': []}
+                for movie in search_movie_objects:
+                    page_container = {}
+                    page_container['title'] = movie.title
+                    page_container['star_score'] = str(movie.moive_star_score)
+                    page_container['release_time'] = str(CTimeHelper.datetimeToInt(movie.release_time))
+                    page_container['major_img_url'] = movie.major_img_url
+                    page_container['download_url'] = movie.ftp_url
+                    page_container['content'] = movie.content
+                    resp_data['list_item'].append(page_container)
+                return resp_data
+            else:
+                return CErrorCode.NO_EXPENSE_RECORD
+        else:
+            return CErrorCode.DATA_PARSE_ERROR
 
 
     @classmethod
