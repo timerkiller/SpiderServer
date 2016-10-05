@@ -11,3 +11,5 @@
 <2016-10-05 11:39:10,868> INFO/movie_manager/list_item, Line:38: parse movie type and sort type failed, reason:Cannot resolve keyword 'movie_star_score' into field. Choices are: content, ftp_url, id, major_img_url, moive_star_score, moive_type, movie_classify, movie_classify_child, release_time, summary_img_url, title
 <2016-10-05 11:40:39,036> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'1', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
 <2016-10-05 11:40:57,556> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'1', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:44:33,140> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:51:40,430> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}

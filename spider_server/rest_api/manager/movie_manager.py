@@ -3,6 +3,7 @@ from app.models import MovieModel
 from rest_api.error_code_list import CErrorCode
 from loglib.logApi import CSysLog
 from utilapp.page import CPage
+from utilapp.tools import CTimeHelper
 class MovieManager(object):
     '''
     影片管理类，所有的影片获取接口都可以通过该接口获取
@@ -33,7 +34,11 @@ class MovieManager(object):
                 sort_type = int(request.data['sort_type'].encode('utf-8'))
                 page_index = int(request.data['page_index'].encode('utf-8'))
                 per_page_size = int(request.data['per_page_size'].encode('utf-8'))
-                return cls.parse_request_type(movie_type, sort_type, page_index, per_page_size)
+                index_type_child = None
+                if 'index_type_child' in request.data:
+                    index_type_child = request.data['index_type_child'].encode('utf-8')
+
+                return cls.parse_request_type(movie_type, sort_type, page_index, per_page_size,index_type_child)
             except Exception,e:
                 CSysLog.info('parse movie type and sort type failed, reason:%s'%(e))
                 return CErrorCode.DATA_PARSE_ERROR
@@ -47,17 +52,22 @@ class MovieManager(object):
 
 
     @classmethod
-    def parse_request_type(cls, movie_type, sort_type, page_index, per_page_size):
+    def parse_request_type(cls, movie_type, sort_type, page_index, per_page_size,index_type_child):
         if movie_type < cls.MovieType.HOME_PAGE or movie_type > cls.MovieType.CH_MOV \
                 or sort_type < cls.SortType.SORT_TIME or sort_type > cls.SortType.SORT_POPULAR:
             return CErrorCode.TYPE_NOT_RESPONSE
 
-        return cls.get_movie_list(movie_type,sort_type,page_index,per_page_size)
+        return cls.get_movie_list(movie_type,sort_type,page_index,per_page_size,index_type_child)
 
     @classmethod
-    def get_movie_list(cls,movie_type, sort_type, page_index, per_page_size):
+    def get_movie_list(cls,movie_type, sort_type, page_index, per_page_size,index_type_child):
         movie_sort_type = cls.get_sort_type(sort_type)
-        movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by(movie_sort_type)
+        movie_objects = None
+        if movie_type == cls.MovieType.NEW_MOV and index_type_child != None:
+            CSysLog.info('get home data and index_type_child :%s',index_type_child)
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_type,movie_classify_child=index_type_child).order_by(movie_sort_type)
+        else:
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by(movie_sort_type)
         if len(movie_objects) > 0:
             page = CPage(movie_objects, per_page_size)
             page_size = page.getPageCounts()
@@ -70,6 +80,7 @@ class MovieManager(object):
                 page_container = {}
                 page_container['title'] = page.title
                 page_container['star_score'] = str(page.moive_star_score)
+                page_container['release_time'] = str(CTimeHelper.datetimeToInt(page.release_time))
                 page_container['major_img_url'] = page.major_img_url
                 page_container['download_url'] = page.ftp_url
                 page_container['content'] = page.content

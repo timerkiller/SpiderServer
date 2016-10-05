@@ -1,7 +1,7 @@
 #coding=utf-8
 import time,datetime
 from django.core.paginator import PageNotAnInteger, Paginator, InvalidPage, EmptyPage
-class CMyTools(object):
+class CTimeHelper(object):
 
     @classmethod
     def timestampToDatetime(cls,value):
@@ -34,7 +34,7 @@ class CMyTools(object):
     @classmethod
     def datetimeToInt(cls,date):
         strTime = date.strftime("%Y-%m-%d %H:%M:%S")
-        return CMyTools.datetimeToTimestamp(strTime)
+        return CTimeHelper.datetimeToTimestamp(strTime)
 
     @classmethod
     def pagination_display(cls,itemList, currentPage,each_page = 8):
@@ -50,7 +50,7 @@ class CMyTools(object):
         return newItemList
 
 if __name__ == '__main__':
-  d = CMyTools.datetimeToTimestamp('2016-09-30 06:54:40')
+  d = CTimeHelper.datetimeToTimestamp('2016-09-30 06:54:40')
   print d
-  s = CMyTools.timestampToDatetime(2432888820)
+  s = CTimeHelper.timestampToDatetime(2432888820)
   print s

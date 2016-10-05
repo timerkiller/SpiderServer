@@ -1,0 +1,16 @@
+{
+"mode":"list",
+"movie_type":"1",
+"sort_type":"0",
+"page_index":"1",
+"per_page_size":"6"
+}
+
+{
+"mode":"list",
+"movie_type":"1",
+"sort_type":"0",
+"page_index":"1",
+"per_page_size":"6",
+"index_type_child":"lastest"
+}

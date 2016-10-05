@@ -2,7 +2,7 @@
 import threading
 from app.models import MovieModel
 from loglib.logApi import CSysLog
-from utilapp.tools import CMyTools
+from utilapp.tools import CTimeHelper
 from django.utils import timezone
 import datetime
 
@@ -140,7 +140,7 @@ class MovieModelOperation(object):
         :param timestamp:
         :return: 当日开始时间和结束时间
         '''
-        date_time = CMyTools.timestampToDatetime(timestamp)
+        date_time = CTimeHelper.timestampToDatetime(timestamp)
         start_date = datetime.datetime(date_time.year, date_time.month, date_time.day,0,0,0)
         end_date = datetime.datetime(date_time.year, date_time.month, date_time.day,23,59,59)
         return start_date,end_date

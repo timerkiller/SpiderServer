@@ -4,7 +4,7 @@ import json
 from django.http import HttpResponse
 
 from app.models import MovieModel
-from utilapp.tools import CMyTools
+from utilapp.tools import CTimeHelper
 from app.database_operation.database_manager import DatabaseManager
 
 def get_obd_info(request):
