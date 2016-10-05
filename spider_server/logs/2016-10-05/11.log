@@ -1,0 +1,9 @@
+<2016-10-05 11:28:53,882> INFO/views/movie, Line:11: {u'movie_type': u'0', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:29:15,065> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:29:15,069> INFO/movie_manager/list_item, Line:38: parse movie type and sort type failed
+<2016-10-05 11:30:21,035> INFO/views/movie, Line:11: {u'movie_type': u'0', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:30:27,322> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:30:27,325> INFO/movie_manager/list_item, Line:38: parse movie type and sort type failed, reason:'MovieModel' object has no attribute 'movie_star_score'
+<2016-10-05 11:31:51,963> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-05 11:32:10,069> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'2'}
+<2016-10-05 11:32:18,250> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'3'}

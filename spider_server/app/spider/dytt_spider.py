@@ -26,10 +26,14 @@ class DyttSpider(object):
     # 传入某一页的索引获得页面代码
 
     class DataType:
-        HOME_PAGE = 0x01#主页数据
-        LASTEST_DATA_PAGE = 0x02#最新影片的数据
-        JP_KO_DATA_PAGE = 0x03#日韩电影数据
-        EUR_AMER_DATA_PAGE = 0x04#欧美电影数据
+        HOME_PAGE = 0x00#主页数据
+        NEW_MOV = 0x01#最新影片的数据
+        EUR_US_MOV = 0x02  # 欧美电影数据
+        JAP_KOR_MOV = 0x03#日韩电影数据
+        CH_TELEPLAY = 0x04  # 国内电视剧
+        VAIRETY_SHOW = 0x05  # 综艺
+        US_TELEPLAY = 0x06  # 美剧
+        STAR_SCORE = 0x07  # 评分最高
 
     @classmethod
     def set_total_page(cls,page):
@@ -232,14 +236,14 @@ class DyttSpider(object):
                 DatabaseManager.get_movie_model_instance().set_array_movies_data(result_data,cls.DataType.HOME_PAGE)
             else:
                 CSysLog.error('No index data yet, please check the spider')
-        elif data_type == cls.DataType.LASTEST_DATA_PAGE:
+        elif data_type == cls.DataType.NEW_MOV:
             if len(cls.movie_detail_items) != 0:
-                DatabaseManager.get_movie_model_instance().set_array_movies_data(cls.movie_detail_items,cls.DataType.LASTEST_DATA_PAGE)
+                DatabaseManager.get_movie_model_instance().set_array_movies_data(cls.movie_detail_items, cls.DataType.NEW_MOV)
             else:
                 CSysLog.error('No lastest data yet, please check the spider')
-        elif data_type == cls.DataType.JP_KO_DATA_PAGE:
+        elif data_type == cls.DataType.JAP_KOR_MOV:
             pass
-        elif data_type == cls.DataType.EUR_AMER_DATA_PAGE:
+        elif data_type == cls.DataType.EUR_US_MOV:
             pass
         else:
             CSysLog.error('Data type error!!!!')
@@ -256,7 +260,7 @@ class DyttSpider(object):
                 movie_detail['major_img_url'] = movie['majorPicUrl']
                 movie_detail['movie_star_score'] = Tool.getStarScore(movie['content'])
                 movie_detail['movie_type'] = Tool.getMovieType(movie['content'])
-                movie_detail['movie_classify'] = 0x01
+                movie_detail['movie_classify'] = cls.DataType.HOME_PAGE
                 movie_detail['movie_classify_child'] = data_type
                 movie_detail['summary_img_url'] = movie['summaryPicUrl']
                 movie_detail['content'] = Tool.getMovieContent(movie['content'])
@@ -281,8 +285,8 @@ class DyttSpider(object):
         根据类型类启动爬虫
         HOME_PAGE = 0x01#主页数据,需要每隔一定时间去爬取，获取更新数据
         NEWEST_DATA_PAGE = 0x02#最新的数据
-        JP_KO_DATA_PAGE = 0x03#日韩电影数据
-        EUR_AMER_DATA_PAGE = 0x04#欧美电影数据
+        JAP_KOR_MOV = 0x03#日韩电影数据
+        EUR_US_MOV = 0x04#欧美电影数据
 
         :param data_type:
         :return:

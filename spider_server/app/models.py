@@ -13,8 +13,8 @@ class MovieModel(models.Model):
     summary_img_url = models.CharField(verbose_name="内容概要视频截图PIC", max_length=64, null=True, blank=True)
     content = models.TextField(verbose_name="影片介绍", max_length=1024, null=True, blank=True)
     ftp_url = models.CharField(verbose_name="ftp地址", max_length=64, null=True, blank=True)
-    movie_classify = models.IntegerField(verbose_name="影片首页子类别",null=True,blank=True)#影片所属分类，是最新电影，首页推荐最新，首页迅雷资源等等
-    movie_classify_child = models.CharField(verbose_name="影片类别",choices=TYPE_CHOICES,max_length=64,null=True,blank=True)#此字段只针对首页数据，因为首页数据可能有多个为最新推荐，经典推进等额定
+    movie_classify = models.IntegerField(verbose_name="影片类别",null=True,blank=True)#影片所属分类，是最新电影，
+    movie_classify_child = models.CharField(verbose_name="影片首页子类别",choices=TYPE_CHOICES,max_length=64,null=True,blank=True)#此字段只针对首页数据，因为首页数据可能有多个为最新推荐，经典推进等额定
 
     class Meta:
         db_table = 'movie_list'

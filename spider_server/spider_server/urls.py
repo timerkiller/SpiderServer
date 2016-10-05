@@ -24,8 +24,7 @@ except ImportError:
     from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
                        url(r'^admin/', include(admin.site.urls)),
-
-                       # url(r'^ueditor/', include('DjangoUeditor.urls')),
+                       url(r'^api/', include('rest_api.urls')),
                        url(r'^get_obd_info/', get_obd_info, name='get_obd_info'),
                        # url(r'^webchatEntrance/', webchatEntrance, name='webchatEn trance'),
 
