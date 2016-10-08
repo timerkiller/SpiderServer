@@ -14,3 +14,8 @@
 "per_page_size":"6",
 "index_type_child":"lastest"
 }
+
+{
+"mode":"search",
+"condition":"超能敢死队"
+}

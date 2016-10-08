@@ -1,0 +1,375 @@
+<2016-10-08 20:00:00,361> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,361> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,375> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,407> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,423> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,516> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,548> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,562> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,625> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,625> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:00,687> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:02,595> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:02,627> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:02,641> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:03,424> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,438> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,454> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,473> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,506> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,515> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,549> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,569> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,585> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,604> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,611> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:03,619> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:05,779> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:05,805> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:05,808> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:05,809> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:05,811> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:05,812> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:05,813> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:05,815> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:05,816> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:05,818> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:05,819> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:05,821> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:05,822> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:08,871> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:08,888> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:08,903> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:08,903> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:08,903> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:08,903> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:10,664> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,680> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,696> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,710> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,726> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,773> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,819> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,819> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,819> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,835> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,851> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:10,930> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:13,661> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:13,673> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:13,674> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:13,674> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:13,676> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:13,677> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:13,677> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:13,678> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:13,680> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:13,680> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:13,681> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:13,683> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:13,684> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:15,532> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,540> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,562> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,605> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,614> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,657> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,667> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,677> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:15,684> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:18,153> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:18,177> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:18,178> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:18,180> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:18,184> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:18,186> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:18,188> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:18,190> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:18,193> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:18,196> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:18,197> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:18,198> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:18,200> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:18,624> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:18,638> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:18,641> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:18,642> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:18,644> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:18,651> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:18,653> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:18,654> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:18,654> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:18,655> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:18,657> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:18,657> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:18,660> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:19,334> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:19,351> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:19,352> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:19,355> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:19,358> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:19,359> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:19,361> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:19,362> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:19,365> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:19,365> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:19,368> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:19,369> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:19,371> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:21,858> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:21,869> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:21,871> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:21,874> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:21,875> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:21,875> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:21,877> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:21,878> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:21,878> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:21,880> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:21,881> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:21,881> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:21,882> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:00:45,279> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,292> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,313> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,335> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,394> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,477> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,492> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,503> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,506> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:45,506> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:49,733> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:00:49,756> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:00:49,757> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:00:49,759> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:00:49,760> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:00:49,762> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:00:49,763> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:00:49,763> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:00:49,765> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:00:49,766> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:00:49,767> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:00:49,767> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:00:49,769> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:03:16,049> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:03:16,072> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:03:16,073> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:03:16,076> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:03:16,078> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:03:16,078> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:03:16,079> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:03:16,081> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:03:16,082> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:03:16,082> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:03:16,084> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:03:16,085> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:03:16,085> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:07:39,239> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:39,255> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:07:39,256> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:07:39,259> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:07:39,259> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:07:39,260> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:07:39,262> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:07:39,263> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:07:39,265> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:07:39,266> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:07:39,266> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:07:39,266> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:07:39,267> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:07:39,667> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,276> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,316> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,321> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,329> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,344> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,375> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,407> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,413> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:41,415> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:43,640> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:43,653> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:07:43,655> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:07:43,657> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:07:43,658> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:07:43,660> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:07:43,661> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:07:43,663> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:07:43,664> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:07:43,667> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:07:43,667> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:07:43,668> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:07:43,671> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:07:44,246> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,263> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,266> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,269> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,273> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,338> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,345> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,444> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,467> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:07:44,470> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:51:29,513> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:51:29,522> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:51:29,523> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:51:29,523> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:51:29,523> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:51:29,525> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:51:29,525> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:51:29,526> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:51:29,526> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:51:29,526> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:51:29,526> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:51:29,528> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:51:29,528> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:51:30,316> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:51:50,052> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:09,490> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:11,443> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:11,453> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:52:11,453> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:52:11,454> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:52:11,456> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:52:11,456> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:52:11,457> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:52:11,457> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:52:11,457> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:52:11,457> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:52:11,459> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:52:11,459> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:52:11,460> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:52:12,394> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,589> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,625> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,661> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,711> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,755> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,792> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:14,838> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:16,872> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:16,908> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:16,940> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:16,973> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:17,020> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:23,743> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:23,786> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:23,835> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:31,426> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:31,471> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:31,509> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:34,108> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:34,151> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:34,190> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:52:34,244> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,634> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,671> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,703> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,734> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,773> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,802> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:54:59,851> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,006> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,048> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,082> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,134> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,174> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,315> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:00,851> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,013> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,092> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,131> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,193> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,230> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,283> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,323> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,358> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,480> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,628> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:01,921> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:02,168> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,243> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,323> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,381> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,427> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,467> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,515> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,565> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,611> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,644> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:03,696> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,140> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,203> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,236> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,269> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,302> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,332> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,371> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,404> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,437> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,467> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,502> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,533> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,569> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,599> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,920> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:04,966> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:06,885> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:06,947> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:07,000> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:08,832> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:08,846> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-08 20:55:08,848> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-08 20:55:08,848> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-08 20:55:08,848> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-08 20:55:08,849> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-08 20:55:08,849> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-08 20:55:08,851> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-08 20:55:08,851> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-08 20:55:08,851> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-08 20:55:08,852> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-08 20:55:08,852> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-08 20:55:08,854> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-08 20:55:10,102> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,141> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,173> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,229> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,259> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,289> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:55:10,323> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,686> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,789> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,819> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,872> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,921> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,950> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:16,994> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,030> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,068> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,154> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,230> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,263> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,296> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,332> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,380> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:17,733> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:22,752> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}
+<2016-10-08 20:56:22,914> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'3', u'per_page_size': u'12', u'mode': u'list'}

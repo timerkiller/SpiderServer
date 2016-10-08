@@ -5,6 +5,7 @@ import datetime
 import time
 from loglib.logApi import CSysLog
 from django.utils import timezone
+import chardet
 class Tool:
     # 去除img标签,7位长空格
     removeImg = re.compile('<img.*?>|  {7}|')
@@ -73,3 +74,16 @@ class Tool:
     @classmethod
     def getMovieContent(cls,dst_str):
         return cls.replace(dst_str)
+
+    @classmethod
+    def removeUnusefulText(cls,dst_str):
+        try:
+            movie_title_pattern = re.compile('《(.*?)》')
+            result = re.findall(movie_title_pattern,dst_str.encode('utf-8'))
+            if result:
+                CSysLog.info(result[0])
+                return result[0].decode('utf-8')
+            else:
+                return '其他'.encode('utf-8')
+        except Exception,e:
+            print e

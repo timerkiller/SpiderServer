@@ -1,0 +1,20 @@
+<2016-10-07 12:15:14,526> INFO/views/movie, Line:11: <rest_framework.request.Request object at 0x04189ED0>
+<2016-10-07 12:22:01,016> INFO/views/movie, Line:11: <rest_framework.request.Request object at 0x04236270>
+<2016-10-07 12:22:33,614> INFO/views/movie, Line:11: <rest_framework.request.Request object at 0x04236E90>
+<2016-10-07 12:22:33,826> INFO/views/movie, Line:11: <rest_framework.request.Request object at 0x0423E8F0>
+<2016-10-07 12:22:34,035> INFO/views/movie, Line:11: <rest_framework.request.Request object at 0x041AF9D0>
+<2016-10-07 12:23:38,552> INFO/views/movie, Line:11: {u'movies': {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'6', u'mode': u'list'}}
+<2016-10-07 12:35:07,461> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'6', u'mode': u'list'}
+<2016-10-07 12:35:51,283> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'6', u'mode': u'list'}
+<2016-10-07 12:36:35,953> INFO/views/movie, Line:11: 123
+<2016-10-07 12:37:02,342> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:37:07,398> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:37:26,888> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:37:30,342> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'6', u'mode': u'list'}
+<2016-10-07 12:40:32,454> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:40:32,463> INFO/movie_manager/list_item, Line:43: parse movie type and sort type failed, reason:'list_item'
+<2016-10-07 12:41:34,427> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:43:40,355> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:43:40,371> INFO/movie_manager/list_item, Line:43: parse movie type and sort type failed, reason:global name 'movie' is not defined
+<2016-10-07 12:43:59,319> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-07 12:52:05,792> INFO/views/movie, Line:11: {u'sort_type': u'0', u'movie_type': u'1', u'page_index': u'1', u'per_page_size': u'6', u'mode': u'list'}

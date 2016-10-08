@@ -1,5 +1,6 @@
 #coding=utf-8
 from app.models import MovieModel
+from app.tool import Tool
 from rest_api.error_code_list import CErrorCode
 from loglib.logApi import CSysLog
 from utilapp.page import CPage
@@ -52,16 +53,18 @@ class MovieManager(object):
             condition = request.data['condition'].encode('utf-8')
             search_movie_objects = MovieModel.objects.filter(title__contains=condition).order_by('release_time')
             if len(search_movie_objects) > 0:
-                resp_data = {'result': 'ok', 'list_item': []}
+                resp_data = {'result': 'ok', 'movies': []}
                 for movie in search_movie_objects:
                     page_container = {}
-                    page_container['title'] = movie.title
+                    page_container['title'] = Tool.removeUnusefulText(movie.title)
                     page_container['star_score'] = str(movie.moive_star_score)
                     page_container['release_time'] = str(CTimeHelper.datetimeToInt(movie.release_time))
                     page_container['major_img_url'] = movie.major_img_url
                     page_container['download_url'] = movie.ftp_url
                     page_container['content'] = movie.content
-                    resp_data['list_item'].append(page_container)
+                    page_container['movie_type'] = movie.moive_type
+                    page_container['summary_img_url'] = movie.summary_img_url
+                    resp_data['movies'].append(page_container)
                 return resp_data
             else:
                 return CErrorCode.NO_EXPENSE_RECORD
@@ -90,19 +93,23 @@ class MovieManager(object):
             page = CPage(movie_objects, per_page_size)
             page_size = page.getPageCounts()
             page_data = page.getPageDate(page_index)
-            resp_data = {'result': 'ok', 'total_page': str(page_size), 'list_item': []}
+            resp_data = {'result': 'ok', 'total_page': str(page_size), 'movies': []}
             if page_index > page_size:
                 return resp_data
 
+            print 'fdasfasdf'
             for page in page_data:
                 page_container = {}
-                page_container['title'] = page.title
+                page_container['id'] = page.id
+                page_container['title'] = Tool.removeUnusefulText(page.title)
                 page_container['star_score'] = str(page.moive_star_score)
                 page_container['release_time'] = str(CTimeHelper.datetimeToInt(page.release_time))
                 page_container['major_img_url'] = page.major_img_url
                 page_container['download_url'] = page.ftp_url
                 page_container['content'] = page.content
-                resp_data['list_item'].append(page_container)
+                page_container['movie_type'] = page.moive_type
+                page_container['summary_img_url'] = page.summary_img_url
+                resp_data['movies'].append(page_container)
             return resp_data
         else:
             return CErrorCode.NO_EXPENSE_RECORD
