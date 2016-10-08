@@ -1,0 +1,7 @@
+<2016-10-09 07:30:43,378> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-09 07:30:43,387> INFO/tool/removeUnusefulText, Line:84: 瑞士军刀男
+<2016-10-09 07:30:43,388> INFO/tool/removeUnusefulText, Line:84: 绝地逃亡
+<2016-10-09 07:30:43,388> INFO/tool/removeUnusefulText, Line:84: 终极硬汉
+<2016-10-09 07:30:43,388> INFO/tool/removeUnusefulText, Line:84: 超能敢死队
+<2016-10-09 07:30:43,391> INFO/tool/removeUnusefulText, Line:84: 最终幻想15：王者之剑
+<2016-10-09 07:30:43,391> INFO/tool/removeUnusefulText, Line:84: 独立日：卷土重来
