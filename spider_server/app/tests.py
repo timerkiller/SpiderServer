@@ -20,11 +20,18 @@ if __name__ == '__main__':
     # else:
     #     print '其他'
 
-    removeComma = re.compile(',')
-    getCommaResult = re.findall(removeComma, '6,6')
-    if getCommaResult:
-        print 'fasdfad'
-        print float(re.sub(removeComma, ".", '6,6'))
+    # removeComma = re.compile(',')
+    # getCommaResult = re.findall(removeComma, '6,6')
+    # if getCommaResult:
+    #     print 'fasdfad'
+    #     print float(re.sub(removeComma, ".", '6,6'))
+    #
+    # else:
+    #     print float('6.6')
 
+    pattern = re.compile('(http.*?jpg).*?')
+    result = re.findall(pattern,"http://pic.yupoo.com/lihangze/DigGMbq8/ShhTp.jpg")
+    if result:
+        print result[0]
     else:
-        print float('6.6')
+        print 'failed'

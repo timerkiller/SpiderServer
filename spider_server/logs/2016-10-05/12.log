@@ -1,5 +1,0 @@
-<2016-10-05 12:00:48,301> INFO/views/movie, Line:11: {u'index_type_child': u'lastest', u'per_page_size': u'6', u'page_index': u'1', u'sort_type': u'0', u'mode': u'list', u'movie_type': u'1'}
-<2016-10-05 12:01:34,684> INFO/views/movie, Line:11: {u'index_type_child': u'lastest', u'per_page_size': u'6', u'page_index': u'1', u'sort_type': u'0', u'mode': u'list', u'movie_type': u'1'}
-<2016-10-05 12:02:20,819> INFO/views/movie, Line:11: {u'index_type_child': u'lastest', u'per_page_size': u'6', u'page_index': u'1', u'sort_type': u'0', u'mode': u'list', u'movie_type': u'1'}
-<2016-10-05 12:03:53,503> INFO/views/movie, Line:11: {u'index_type_child': u'lastest', u'per_page_size': u'6', u'page_index': u'1', u'sort_type': u'0', u'mode': u'list', u'movie_type': u'1'}
-<2016-10-05 12:03:53,505> INFO/movie_manager/get_movie_list, Line:67: get home data and index_type_child :lastest

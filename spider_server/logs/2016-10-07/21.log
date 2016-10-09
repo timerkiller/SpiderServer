@@ -1,2 +1,0 @@
-<2016-10-07 21:47:58,730> INFO/views/movie, Line:11: {u'access_token': u'', u'mode': u'search', u'condition': u'\u6cf0\u5c71'}
-<2016-10-07 21:49:02,818> INFO/views/movie, Line:11: {u'access_token': u'', u'mode': u'search', u'condition': u'2016'}

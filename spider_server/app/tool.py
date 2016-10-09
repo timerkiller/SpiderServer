@@ -24,6 +24,8 @@ class Tool:
 
     removePonit = re.compile('&middot;')
 
+    reUseUrl =re.compile('(http.*?jpg).*?')
+
     removeComma=re.compile(',')
     #获取发布时间
     releaseTime = re.compile('(\d{4}-\d{1,2}-\d{1,2}$)')
@@ -92,3 +94,11 @@ class Tool:
                 return '其他'.encode('utf-8')
         except Exception,e:
             print e
+
+    @classmethod
+    def reMatchUrl(cls,dst_url):
+        result = re.findall(cls.reUseUrl,dst_url)
+        if result:
+            return result[0]
+        else:
+            return dst_url

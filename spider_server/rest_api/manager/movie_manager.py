@@ -59,7 +59,7 @@ class MovieManager(object):
                     page_container['title'] = Tool.removeUnusefulText(movie.title)
                     page_container['star_score'] = str(movie.moive_star_score)
                     page_container['release_time'] = str(CTimeHelper.datetimeToInt(movie.release_time))
-                    page_container['major_img_url'] = movie.major_img_url
+                    page_container['major_img_url'] = Tool.reMatchUrl(movie.major_img_url)
                     page_container['download_url'] = movie.ftp_url
                     page_container['content'] = movie.content
                     page_container['movie_type'] = movie.moive_type
@@ -105,7 +105,7 @@ class MovieManager(object):
                 page_container['title'] = Tool.removeUnusefulText(page.title)
                 page_container['star_score'] = str(page.moive_star_score)
                 page_container['release_time'] = str(CTimeHelper.datetimeToInt(page.release_time))
-                page_container['major_img_url'] = page.major_img_url
+                page_container['major_img_url'] = Tool.reMatchUrl(page.major_img_url)
                 page_container['download_url'] = page.ftp_url
                 page_container['content'] = page.content
                 page_container['movie_type'] = page.moive_type
