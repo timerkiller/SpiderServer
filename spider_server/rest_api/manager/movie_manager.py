@@ -88,7 +88,7 @@ class MovieManager(object):
             CSysLog.info('get home data and index_type_child :%s',index_type_child)
             movie_objects = MovieModel.objects.filter(movie_classify=movie_type,movie_classify_child=index_type_child).order_by(movie_sort_type)
         else:
-            movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by(movie_sort_type)
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by("-"+movie_sort_type)
         if len(movie_objects) > 0:
             CSysLog.info("movie_object size :%d"%(len(movie_objects)))
             # page = CPage(movie_objects, per_page_size)
