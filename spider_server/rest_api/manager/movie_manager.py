@@ -3,7 +3,7 @@ from app.models import MovieModel
 from app.tool import Tool
 from rest_api.error_code_list import CErrorCode
 from loglib.logApi import CSysLog
-from utilapp.page import CPage
+from utilapp.page import CPageHelper,CPage
 from utilapp.tools import CTimeHelper
 class MovieManager(object):
     '''
@@ -90,14 +90,15 @@ class MovieManager(object):
         else:
             movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by(movie_sort_type)
         if len(movie_objects) > 0:
-            page = CPage(movie_objects, per_page_size)
-            page_size = page.getPageCounts()
-            page_data = page.getPageDate(page_index)
+            CSysLog.info("movie_object size :%d"%(len(movie_objects)))
+            # page = CPage(movie_objects, per_page_size)
+            # page_size = page.getPageCounts()
+            # page_data = page.getPageDate(page_index)
+            page_data,page_size = CPageHelper.pagination_display(movie_objects,page_index,per_page_size)
             resp_data = {'result': 'ok', 'total_page': str(page_size), 'movies': []}
             if page_index > page_size:
                 return resp_data
 
-            print 'fdasfasdf'
             for page in page_data:
                 page_container = {}
                 page_container['id'] = page.id

@@ -1,4 +1,6 @@
 #coding=utf-8
+from django.core.paginator import PageNotAnInteger, Paginator, InvalidPage, EmptyPage
+
 __author__ = 'jclin'
 #分页类
 class CPage(object):
@@ -24,4 +26,18 @@ class CPage(object):
         else:
             items = self.obj[start:end]
         return items
+
+class CPageHelper(object):
+    @classmethod
+    def pagination_display(cls,itemList, currentPage,each_page = 8):
+        paginator = Paginator(itemList,each_page)
+        try:
+            page = int(currentPage)
+        except ValueError:
+            page = 1
+        try:
+            newItemList = paginator.page(page)
+        except (EmptyPage, InvalidPage):
+            newItemList = paginator.page(paginator.num_pages)
+        return newItemList,paginator.num_pages
 

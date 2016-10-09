@@ -1,0 +1,69 @@
+<2016-10-09 08:05:35,515> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'1'}
+<2016-10-09 08:05:35,522> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:05:35,522> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-09 08:05:35,529> INFO/tool/removeUnusefulText, Line:84: 微微一笑很倾城
+<2016-10-09 08:05:35,529> INFO/tool/removeUnusefulText, Line:84: 泰山归来：险战丛林
+<2016-10-09 08:05:35,529> INFO/tool/removeUnusefulText, Line:84: 人类清除计划3
+<2016-10-09 08:05:35,532> INFO/tool/removeUnusefulText, Line:84: 幸运是我
+<2016-10-09 08:05:35,532> INFO/tool/removeUnusefulText, Line:84: 瑞士军刀男
+<2016-10-09 08:05:51,595> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'2'}
+<2016-10-09 08:05:51,611> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:05:51,612> INFO/tool/removeUnusefulText, Line:84: 绝地逃亡
+<2016-10-09 08:05:51,614> INFO/tool/removeUnusefulText, Line:84: 终极硬汉
+<2016-10-09 08:05:51,615> INFO/tool/removeUnusefulText, Line:84: 超能敢死队
+<2016-10-09 08:05:51,615> INFO/tool/removeUnusefulText, Line:84: 最终幻想15：王者之剑
+<2016-10-09 08:05:51,618> INFO/tool/removeUnusefulText, Line:84: 独立日：卷土重来
+<2016-10-09 08:05:51,618> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-09 08:05:57,884> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'1'}
+<2016-10-09 08:05:57,891> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:05:57,894> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-09 08:05:57,894> INFO/tool/removeUnusefulText, Line:84: 微微一笑很倾城
+<2016-10-09 08:05:57,894> INFO/tool/removeUnusefulText, Line:84: 泰山归来：险战丛林
+<2016-10-09 08:05:57,895> INFO/tool/removeUnusefulText, Line:84: 人类清除计划3
+<2016-10-09 08:05:57,895> INFO/tool/removeUnusefulText, Line:84: 幸运是我
+<2016-10-09 08:05:57,898> INFO/tool/removeUnusefulText, Line:84: 瑞士军刀男
+<2016-10-09 08:05:57,898> INFO/tool/removeUnusefulText, Line:84: 绝地逃亡
+<2016-10-09 08:05:57,901> INFO/tool/removeUnusefulText, Line:84: 终极硬汉
+<2016-10-09 08:05:57,901> INFO/tool/removeUnusefulText, Line:84: 超能敢死队
+<2016-10-09 08:05:57,901> INFO/tool/removeUnusefulText, Line:84: 最终幻想15：王者之剑
+<2016-10-09 08:05:57,904> INFO/tool/removeUnusefulText, Line:84: 独立日：卷土重来
+<2016-10-09 08:05:57,904> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-09 08:06:05,901> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'6', u'mode': u'list', u'page_index': u'2'}
+<2016-10-09 08:06:05,905> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:05,908> INFO/tool/removeUnusefulText, Line:84: 绝地逃亡
+<2016-10-09 08:06:05,908> INFO/tool/removeUnusefulText, Line:84: 终极硬汉
+<2016-10-09 08:06:05,908> INFO/tool/removeUnusefulText, Line:84: 超能敢死队
+<2016-10-09 08:06:05,908> INFO/tool/removeUnusefulText, Line:84: 最终幻想15：王者之剑
+<2016-10-09 08:06:05,911> INFO/tool/removeUnusefulText, Line:84: 独立日：卷土重来
+<2016-10-09 08:06:05,911> INFO/tool/removeUnusefulText, Line:84: 咖啡公社
+<2016-10-09 08:06:23,983> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'2'}
+<2016-10-09 08:06:23,990> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:23,990> INFO/tool/removeUnusefulText, Line:84: 黑暗/米兰达街6号
+<2016-10-09 08:06:23,992> INFO/tool/removeUnusefulText, Line:84: 爱情与友谊/情人与知己
+<2016-10-09 08:06:23,992> INFO/tool/removeUnusefulText, Line:84: 张震讲故事之合租屋
+<2016-10-09 08:06:23,993> INFO/tool/removeUnusefulText, Line:84: 超能敢死队加长版
+<2016-10-09 08:06:23,994> INFO/tool/removeUnusefulText, Line:84: 安娜华特的离奇命运
+<2016-10-09 08:06:23,994> INFO/tool/removeUnusefulText, Line:84: 爱丽丝梦游仙境2：镜中奇遇记
+<2016-10-09 08:06:23,996> INFO/tool/removeUnusefulText, Line:84: 我最好朋友的婚礼
+<2016-10-09 08:06:23,996> INFO/tool/removeUnusefulText, Line:84: 森林深处/进入森林
+<2016-10-09 08:06:23,996> INFO/tool/removeUnusefulText, Line:84: 美国迦顿
+<2016-10-09 08:06:23,997> INFO/tool/removeUnusefulText, Line:84: 诡新娘/鬼新娘
+<2016-10-09 08:06:23,999> INFO/tool/removeUnusefulText, Line:84: 大鱼海棠
+<2016-10-09 08:06:24,000> INFO/tool/removeUnusefulText, Line:84: 使徒行者
+<2016-10-09 08:06:30,996> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'3'}
+<2016-10-09 08:06:31,003> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:31,003> INFO/tool/removeUnusefulText, Line:84: 喊・山/喊山
+<2016-10-09 08:06:31,005> INFO/tool/removeUnusefulText, Line:84: 潜伏者
+<2016-10-09 08:06:31,006> INFO/tool/removeUnusefulText, Line:84: 赏金猎人
+<2016-10-09 08:06:37,928> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'4'}
+<2016-10-09 08:06:37,936> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:45,608> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'0'}
+<2016-10-09 08:06:45,618> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:45,618> INFO/tool/removeUnusefulText, Line:84: 喊・山/喊山
+<2016-10-09 08:06:45,618> INFO/tool/removeUnusefulText, Line:84: 潜伏者
+<2016-10-09 08:06:45,621> INFO/tool/removeUnusefulText, Line:84: 赏金猎人
+<2016-10-09 08:06:56,167> INFO/views/movie, Line:11: {u'movie_type': u'1', u'sort_type': u'0', u'per_page_size': u'12', u'mode': u'list', u'page_index': u'0'}
+<2016-10-09 08:06:56,174> INFO/movie_manager/get_movie_list, Line:93: movie_object size :27
+<2016-10-09 08:06:56,177> INFO/tool/removeUnusefulText, Line:84: 喊・山/喊山
+<2016-10-09 08:06:56,177> INFO/tool/removeUnusefulText, Line:84: 潜伏者
+<2016-10-09 08:06:56,177> INFO/tool/removeUnusefulText, Line:84: 赏金猎人
