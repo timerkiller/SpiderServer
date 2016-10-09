@@ -1,0 +1,42 @@
+<2016-10-09 10:59:23,967> INFO/dytt_spider/start_all, Line:296: get lastest all movies done
+<2016-10-09 10:59:23,982> INFO/dytt_spider/get_lastest_all_movies_detail, Line:151: Total movie url(24)
+<2016-10-09 10:59:23,982> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52100.html
+<2016-10-09 10:59:23,986> INFO/dytt_spider/start_all, Line:296: get lastest all movies done
+<2016-10-09 10:59:23,986> INFO/dytt_spider/get_lastest_all_movies_detail, Line:151: Total movie url(24)
+<2016-10-09 10:59:23,986> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52100.html
+<2016-10-09 10:59:25,917> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52087.html
+<2016-10-09 10:59:25,917> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52087.html
+<2016-10-09 10:59:27,772> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52086.html
+<2016-10-09 10:59:27,773> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52086.html
+<2016-10-09 10:59:29,591> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52085.html
+<2016-10-09 10:59:29,592> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20161002/52085.html
+<2016-10-09 10:59:33,596> WARNING/dytt_spider/getPage, Line:79: get page error reason: <urlopen error timed out>
+<2016-10-09 10:59:33,596> WARNING/dytt_spider/getPage, Line:79: get page error reason: <urlopen error timed out>
+<2016-10-09 10:59:34,717> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160929/52073.html
+<2016-10-09 10:59:34,795> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160929/52073.html
+<2016-10-09 10:59:36,829> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160928/52066.html
+<2016-10-09 10:59:36,862> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160928/52066.html
+<2016-10-09 10:59:38,799> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160924/52032.html
+<2016-10-09 10:59:38,841> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160924/52032.html
+<2016-10-09 10:59:40,778> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160924/52030.html
+<2016-10-09 10:59:40,796> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160924/52030.html
+<2016-10-09 10:59:42,779> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160923/52025.html
+<2016-10-09 10:59:42,793> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160923/52025.html
+<2016-10-09 10:59:45,038> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160923/52024.html
+<2016-10-09 10:59:45,240> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160923/52024.html
+<2016-10-09 10:59:47,053> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160922/52018.html
+<2016-10-09 10:59:47,151> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160922/52018.html
+<2016-10-09 10:59:48,864> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160920/52002.html
+<2016-10-09 10:59:48,999> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160920/52002.html
+<2016-10-09 10:59:50,687> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160919/51994.html
+<2016-10-09 10:59:50,815> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160919/51994.html
+<2016-10-09 10:59:52,588> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160919/51993.html
+<2016-10-09 10:59:52,704> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160919/51993.html
+<2016-10-09 10:59:54,671> ERROR/dytt_spider/get_lastest_all_movies_detail, Line:156: get url :http://www.ygdy8.net/html/gndy/dyzz/20160919/51993.html failed
+<2016-10-09 10:59:54,671> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160918/51988.html
+<2016-10-09 10:59:54,766> ERROR/dytt_spider/get_lastest_all_movies_detail, Line:156: get url :http://www.ygdy8.net/html/gndy/dyzz/20160919/51993.html failed
+<2016-10-09 10:59:54,766> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160918/51988.html
+<2016-10-09 10:59:56,733> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160916/51973.html
+<2016-10-09 10:59:56,770> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160916/51973.html
+<2016-10-09 10:59:58,592> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160916/51972.html
+<2016-10-09 10:59:58,711> INFO/dytt_spider/get_movie_detail_res, Line:112: URL:http://www.ygdy8.net/html/gndy/dyzz/20160916/51972.html

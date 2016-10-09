@@ -24,6 +24,7 @@ class Tool:
 
     removePonit = re.compile('&middot;')
 
+    removeComma=re.compile(',')
     #获取发布时间
     releaseTime = re.compile('(\d{4}-\d{1,2}-\d{1,2}$)')
 
@@ -57,7 +58,11 @@ class Tool:
         result = re.findall(pattern,dst_str)
         if(result):
             CSysLog.info(result[0])
-            return float(result[0])
+            getCommaResult = re.findall(cls.removeComma,result[0])
+            if getCommaResult:
+                return re.sub(cls.removeComma,".",result[0])
+            else:
+                return float(result[0])
         else:
             return float('0.0')
 

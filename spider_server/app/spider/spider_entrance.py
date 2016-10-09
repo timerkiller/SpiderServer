@@ -29,9 +29,17 @@ class SpiderThread(object):
             #第一次启动的时候，因为数据库里没数据，所以进行全网爬数据
             if cls.first_start:
                 cls.first_start = False
-                DyttSpider.start(0x01)
+                CSysLog.info('start get home data')
+                DyttSpider.start(0x00)
                 try:
                     DyttSpider.write_to_database(DyttSpider.DataType.HOME_PAGE)
+                except Exception,e:
+                    CSysLog.info('write data to datebase error :%s ',e)
+
+                CSysLog.info('start get page url')
+                DyttSpider.start_all()
+                try:
+                    DyttSpider.write_to_database(DyttSpider.DataType.NEW_MOV)
                 except Exception,e:
                     CSysLog.info('write data to datebase error :%s ',e)
             #需要每隔一定时间去爬取相应的首页数据

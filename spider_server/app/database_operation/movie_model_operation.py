@@ -66,7 +66,7 @@ class MovieModelOperation(object):
         if len(movie_info_array) < 1:
             return False
 
-        if data_type == 0x01:
+        if data_type == 0x00:
             home_movies_objects = MovieModel.objects.filter(movie_classify=data_type)
             if len(home_movies_objects) > 0:
                 CSysLog.info('delete home data')

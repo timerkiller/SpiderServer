@@ -12,10 +12,19 @@ if __name__ == '__main__':
     #         print item
     # else:
     #     print('error')
-    movie_title_pattern = re.compile("《(.*?)》")
-    dst_str = "2016年奇幻《爱丽丝梦游仙境2：镜中奇遇记》"
-    result = re.findall(movie_title_pattern, dst_str)
-    if result:
-        print(result[0])
+    # movie_title_pattern = re.compile("《(.*?)》")
+    # dst_str = "2016年奇幻《爱丽丝梦游仙境2：镜中奇遇记》"
+    # result = re.findall(movie_title_pattern, dst_str)
+    # if result:
+    #     print(result[0])
+    # else:
+    #     print '其他'
+
+    removeComma = re.compile(',')
+    getCommaResult = re.findall(removeComma, '6,6')
+    if getCommaResult:
+        print 'fasdfad'
+        print float(re.sub(removeComma, ".", '6,6'))
+
     else:
-        print '其他'
+        print float('6.6')

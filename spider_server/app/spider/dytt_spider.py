@@ -14,7 +14,7 @@ class DyttSpider(object):
     电影天堂爬虫类，复杂电影天堂网站的视频资源爬取
     '''
 
-    total_page = 2
+    total_page = 50
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64)'
     headers = {'User-Agent': user_agent}
     lastest_total_movies_urls = []
@@ -24,7 +24,6 @@ class DyttSpider(object):
     index_movie_detail_items = {'lastest':[],'classis':[],'new_recommand':[],'classis_recommand':[]} #首页各个电影资源详情的集合
 
     # 传入某一页的索引获得页面代码
-
     class DataType:
         HOME_PAGE = 0x00#主页数据
         NEW_MOV = 0x01#最新影片的数据
@@ -55,6 +54,7 @@ class DyttSpider(object):
         :param pageUrl:
         :return: 返回获取到的网页信息
         '''
+        time.sleep(1)
         try:
             fail_time = 0
             while True:
@@ -234,11 +234,14 @@ class DyttSpider(object):
             if len(cls.index_movie_detail_items) != 0:
                 result_data = cls.parse_index_movie_detail_item(cls.index_movie_detail_items)
                 DatabaseManager.get_movie_model_instance().set_array_movies_data(result_data,cls.DataType.HOME_PAGE)
+                CSysLog.info("write_to_database home data done")
             else:
                 CSysLog.error('No index data yet, please check the spider')
         elif data_type == cls.DataType.NEW_MOV:
             if len(cls.movie_detail_items) != 0:
-                DatabaseManager.get_movie_model_instance().set_array_movies_data(cls.movie_detail_items, cls.DataType.NEW_MOV)
+                result_data = cls.parse_movie_detail_item(cls.movie_detail_items,cls.DataType.NEW_MOV)
+                DatabaseManager.get_movie_model_instance().set_array_movies_data(result_data, cls.DataType.NEW_MOV)
+                CSysLog.info("write_to_database NEW_MOV data done")
             else:
                 CSysLog.error('No lastest data yet, please check the spider')
         elif data_type == cls.DataType.JAP_KOR_MOV:
@@ -268,16 +271,35 @@ class DyttSpider(object):
                 result.append(movie_detail)
         return result
 
+    @classmethod
+    def parse_movie_detail_item(cls,movie_list,movie_classify):
+        result = []
+        for movie in movie_list:
+            movie_detail = {}
+            movie_detail['title'] = movie['title']
+            movie_detail['release_time'] = Tool.getReleaseTime(movie['releaseTime'])
+            movie_detail['major_img_url'] = movie['majorPicUrl']
+            movie_detail['movie_star_score'] = Tool.getStarScore(movie['content'])
+            movie_detail['movie_type'] = Tool.getMovieType(movie['content'])
+            movie_detail['movie_classify'] = movie_classify
+            movie_detail['movie_classify_child'] = "none_type"
+            movie_detail['summary_img_url'] = movie['summaryPicUrl']
+            movie_detail['content'] = Tool.getMovieContent(movie['content'])
+            movie_detail['ftp_url'] = movie['ftpUrl']
+            result.append(movie_detail)
+        return result
 
     @classmethod
     def start_all(cls):
         #获取最新电影的所有链接
         cls.get_lastest_all_movies_res()
-        cls.print_lastest_total_movie_url()
+        CSysLog.info("get lastest all movies done")
+        #cls.print_lastest_total_movie_url()
 
         #在获取链接的基础上，获取所有的最新电影详情
         cls.get_lastest_all_movies_detail()
-        cls.print_all_movies_detail(cls.movie_detail_items)
+        #cls.print_all_movies_detail(cls.movie_detail_items)
+        CSysLog.info("get lastest all movies detail done")
 
     @classmethod
     def start(cls,data_type):
