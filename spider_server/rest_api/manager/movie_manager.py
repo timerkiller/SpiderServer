@@ -10,7 +10,7 @@ class MovieManager(object):
     影片管理类，所有的影片获取接口都可以通过该接口获取
     '''
 
-    class MovieType:
+    class MovieClassType:
         HOME_PAGE = 0x00#主页数据
         NEW_MOV = 0x01#最新影片的数据
         EUR_US_MOV = 0x02  # 欧美电影数据
@@ -28,10 +28,10 @@ class MovieManager(object):
 
     @classmethod
     def list_item(cls,request):
-        if 'movie_type' in request.data and 'sort_type' in request.data \
+        if 'movie_class_type' in request.data and 'sort_type' in request.data \
             and 'page_index' in request.data and 'per_page_size' in request.data:
             try:
-                movie_type = int(request.data['movie_type'].encode('utf-8'))
+                movie_class_type = int(request.data['movie_class_type'].encode('utf-8'))
                 sort_type = int(request.data['sort_type'].encode('utf-8'))
                 page_index = int(request.data['page_index'].encode('utf-8'))
                 per_page_size = int(request.data['per_page_size'].encode('utf-8'))
@@ -39,7 +39,7 @@ class MovieManager(object):
                 if 'index_type_child' in request.data:
                     index_type_child = request.data['index_type_child'].encode('utf-8')
 
-                return cls.parse_request_type(movie_type, sort_type, page_index, per_page_size,index_type_child)
+                return cls.parse_request_type(movie_class_type, sort_type, page_index, per_page_size,index_type_child)
             except Exception,e:
                 CSysLog.info('parse movie type and sort type failed, reason:%s'%(e))
                 return CErrorCode.DATA_PARSE_ERROR
@@ -74,28 +74,28 @@ class MovieManager(object):
 
     @classmethod
     def parse_request_type(cls, movie_type, sort_type, page_index, per_page_size,index_type_child):
-        if movie_type < cls.MovieType.HOME_PAGE or movie_type > cls.MovieType.CH_MOV \
+        if movie_type < cls.MovieClassType.HOME_PAGE or movie_type > cls.MovieClassType.CH_MOV \
                 or sort_type < cls.SortType.SORT_TIME or sort_type > cls.SortType.SORT_POPULAR:
             return CErrorCode.TYPE_NOT_RESPONSE
 
         return cls.get_movie_list(movie_type,sort_type,page_index,per_page_size,index_type_child)
 
     @classmethod
-    def get_movie_list(cls,movie_type, sort_type, page_index, per_page_size,index_type_child):
+    def get_movie_list(cls, movie_class_type, sort_type, page_index, per_page_size, index_type_child):
         movie_sort_type = cls.get_sort_type(sort_type)
         movie_objects = None
-        if movie_type == cls.MovieType.NEW_MOV and index_type_child != None:
+        if movie_class_type == cls.MovieClassType.NEW_MOV and index_type_child != None:
             CSysLog.info('get home data and index_type_child :%s',index_type_child)
-            movie_objects = MovieModel.objects.filter(movie_classify=movie_type,movie_classify_child=index_type_child).order_by(movie_sort_type)
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_class_type, movie_classify_child=index_type_child).order_by(movie_sort_type)
         else:
-            movie_objects = MovieModel.objects.filter(movie_classify=movie_type).order_by("-"+movie_sort_type)
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_class_type).order_by("-" + movie_sort_type)
         if len(movie_objects) > 0:
             CSysLog.info("movie_object size :%d"%(len(movie_objects)))
             # page = CPage(movie_objects, per_page_size)
             # page_size = page.getPageCounts()
             # page_data = page.getPageDate(page_index)
             page_data,page_size = CPageHelper.pagination_display(movie_objects,page_index,per_page_size)
-            resp_data = {'result': 'ok', 'total_page': str(page_size), 'movies': []}
+            resp_data = {'result': 'ok', 'total_page': str(page_size), 'movie_class_type':str(movie_class_type), 'movies': []}
             if page_index > page_size:
                 return resp_data
 
