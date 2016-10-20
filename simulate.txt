@@ -1,6 +1,6 @@
-{
+﻿{
 "mode":"list",
-"movie_type":"1",
+"movie_class_type":"1",
 "sort_type":"0",
 "page_index":"1",
 "per_page_size":"6"
@@ -8,7 +8,7 @@
 
 {
 "mode":"list",
-"movie_type":"1",
+"movie_class_type":"1",
 "sort_type":"0",
 "page_index":"1",
 "per_page_size":"6",

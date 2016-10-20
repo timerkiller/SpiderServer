@@ -21,6 +21,10 @@ class MovieManager(object):
         STAR_SCORE = 0x07  # 评分最高
         CH_MOV = 0x08#国产电影
 
+        GQDY = 0x100
+        GQDY_NEWEST = 0x101
+        GQDY_INDEX = 0x102
+
     class SortType:
         SORT_TIME = 0x00
         SORT_STAR_SCORE = 0x01
@@ -84,9 +88,9 @@ class MovieManager(object):
     def get_movie_list(cls, movie_class_type, sort_type, page_index, per_page_size, index_type_child):
         movie_sort_type = cls.get_sort_type(sort_type)
         movie_objects = None
-        if movie_class_type == cls.MovieClassType.NEW_MOV and index_type_child != None:
+        if movie_class_type == cls.MovieClassType.HOME_PAGE and index_type_child != None:
             CSysLog.info('get home data and index_type_child :%s',index_type_child)
-            movie_objects = MovieModel.objects.filter(movie_classify=movie_class_type, movie_classify_child=index_type_child).order_by(movie_sort_type)
+            movie_objects = MovieModel.objects.filter(movie_classify=movie_class_type|cls.MovieClassType.GQDY_NEWEST, movie_classify_child=index_type_child).order_by(movie_sort_type)
         else:
             movie_objects = MovieModel.objects.filter(movie_classify=movie_class_type).order_by("-" + movie_sort_type)
         if len(movie_objects) > 0:
@@ -110,6 +114,10 @@ class MovieManager(object):
                 page_container['content'] = page.content
                 page_container['movie_type'] = page.moive_type
                 page_container['summary_img_url'] = page.summary_img_url
+                page_container['actor'] = page.actor
+                page_container['country'] = page.country
+                page_container['movie_source']=page.movie_source
+                page_container['update_time']=page.update_time
                 resp_data['movies'].append(page_container)
             return resp_data
         else:

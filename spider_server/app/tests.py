@@ -29,9 +29,19 @@ if __name__ == '__main__':
     # else:
     #     print float('6.6')
 
-    pattern = re.compile('(http.*?jpg).*?')
-    result = re.findall(pattern,"http://pic.yupoo.com/lihangze/DigGMbq8/ShhTp.jpg")
+    # pattern = re.compile('(http.*?jpg).*?')
+    # result = re.findall(pattern,"http://pic.yupoo.com/lihangze/DigGMbq8/ShhTp.jpg")
+    # if result:
+    #     print result[0]
+    # else:
+    #     print 'failed'
+
+    # pattern = re.compile('.*?(\d{4}/\d{1,2}/\d{1,2})')
+    pattern = re.compile('(.*?)\w{2}')
+    result = re.findall(pattern, '终极硬汉BD1280高清国语中英双字')
     if result:
         print result[0]
+        #releaseTime = datetime.datetime.strptime(result[0], "%Y-%m-%d %H:%M:%S")
+        #return datetime.datetime(releaseTime.year, releaseTime.month, releaseTime.day)
     else:
-        print 'failed'
+        print 'errrerer'

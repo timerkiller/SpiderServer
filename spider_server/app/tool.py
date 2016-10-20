@@ -102,3 +102,37 @@ class Tool:
             return result[0]
         else:
             return dst_url
+
+    @classmethod
+    def getActor(cls,dst_str):
+        return ""
+
+    @classmethod
+    def getCountry(cls,dst_str):
+        return ""
+
+    @classmethod
+    def getUpdatetime(cls,dst_str):
+        return ""
+
+
+    @classmethod
+    def getGqdyTitle(cls,dst_str):
+        pattern = re.compile('(.*?)\w{2}')
+        result = re.findall(pattern,dst_str)
+        if result:
+            CSysLog.info(result[0])
+            return result[0]
+        else:
+            return dst_str
+
+    @classmethod
+    def getGqdyReleaseTime(cls,dst_str):
+        pattern = re.compile('.*?(\d{4}/\d{1,2}/\d{1,2})')
+        result = re.findall(pattern,dst_str)
+        if result:
+            CSysLog.info('getGqdyReleaseTime:%s '%result[0])
+            releaseTime = datetime.datetime.strptime(result[0], "%Y/%m/%d")
+            return datetime.datetime(releaseTime.year, releaseTime.month, releaseTime.day)
+        else:
+            return timezone.now()

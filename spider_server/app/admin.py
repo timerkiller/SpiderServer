@@ -7,7 +7,7 @@ from app.models import MovieModel
 #     list_display = ('title','release_time','major_img_url','moive_star_score',)
 
 class MovieModel_Admin(admin.ModelAdmin):
-    list_display = ('title','release_time','major_img_url','moive_star_score','moive_type','movie_classify','summary_img_url','ftp_url')
+    list_display = ('title','release_time','major_img_url','moive_star_score','moive_type','movie_classify','summary_img_url','download_url','content','country','actor','update_time')
 
 # admin.site.register(MovieDetailModel,MovieDetailModel_Admin)
 admin.site.register(MovieModel,MovieModel_Admin)

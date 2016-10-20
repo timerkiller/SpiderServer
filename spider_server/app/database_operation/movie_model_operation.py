@@ -52,7 +52,7 @@ class MovieModelOperation(object):
             new_movie_detail.major_img_url = movie_info['majorPicUrl']
             new_movie_detail.moive_star_score = movie_info['starScore']
             new_movie_detail.content = movie_info['content']
-            new_movie_detail.ftp_url = movie_info['ftpUrl']
+            new_movie_detail.download_url = movie_info['download_url']
             new_movie_detail.moive_detail = new_movie
             new_movie_detail.save()
 
@@ -85,7 +85,12 @@ class MovieModelOperation(object):
             new_movie.movie_classify_child = movie_info['movie_classify_child']
             new_movie.summary_img_url = movie_info['summary_img_url']
             new_movie.content = movie_info['content']
-            new_movie.ftp_url = movie_info['ftp_url']
+            new_movie.download_url = movie_info['download_url']
+            new_movie.actor = movie_info['actor']
+            new_movie.country = movie_info['country']
+            new_movie.update_time = movie_info['update_time']
+            new_movie.movie_source=movie_info['movie_source']
+
             movie_objects.append(new_movie)
 
         MovieModel.objects.bulk_create(movie_objects)

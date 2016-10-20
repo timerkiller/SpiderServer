@@ -8,13 +8,13 @@ from app.config import Config
 from app.tool import Tool
 from loglib.logApi import CSysLog
 from app.database_operation.database_manager import DatabaseManager
+from app.spider.base_spider import BaseSpider
 
-class DyttSpider(object):
+class DyttSpider(BaseSpider):
     '''
     电影天堂爬虫类，复杂电影天堂网站的视频资源爬取
     '''
-
-    total_page = 50
+    total_page = 2
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64)'
     headers = {'User-Agent': user_agent}
     lastest_total_movies_urls = []
@@ -22,17 +22,6 @@ class DyttSpider(object):
     data_type_arr = ['lastest', 'classis']
     index_urls = {'lastest':[],'classis':[],'new_recommand':[],'classis_recommand':[]} #首页各个的URL集合
     index_movie_detail_items = {'lastest':[],'classis':[],'new_recommand':[],'classis_recommand':[]} #首页各个电影资源详情的集合
-
-    # 传入某一页的索引获得页面代码
-    class DataType:
-        HOME_PAGE = 0x00#主页数据
-        NEW_MOV = 0x01#最新影片的数据
-        EUR_US_MOV = 0x02  # 欧美电影数据
-        JAP_KOR_MOV = 0x03#日韩电影数据
-        CH_TELEPLAY = 0x04  # 国内电视剧
-        VAIRETY_SHOW = 0x05  # 综艺
-        US_TELEPLAY = 0x06  # 美剧
-        STAR_SCORE = 0x07  # 评分最高
 
     @classmethod
     def set_total_page(cls,page):
@@ -46,41 +35,6 @@ class DyttSpider(object):
 
         cls.total_page = page
         return True
-
-    @classmethod
-    def getPage(cls, pageUrl):
-        '''
-        获取某个网页的信息，后面可以考虑使用scray框架
-        :param pageUrl:
-        :return: 返回获取到的网页信息
-        '''
-        time.sleep(1)
-        try:
-            fail_time = 0
-            while True:
-                try:
-                    if fail_time > 5:
-                        return None
-                    request = urllib2.Request(pageUrl, headers = cls.headers)
-                    response = urllib2.urlopen(request,None,3)
-                    pageCode = response.read()
-                    encodeType = chardet.detect(pageCode)['encoding']
-                    if encodeType == 'ISO-8859-2':
-                        pageCode = pageCode.decode('ISO-8859-2', 'ignore').encode('utf-8')
-                    elif encodeType == 'gbk' or encodeType == 'GBK':
-                        pageCode = pageCode.decode('gbk', 'ignore').encode('utf-8')
-                    elif encodeType == 'gb2312' or encodeType == 'GB2312':
-                        pageCode = pageCode.decode('gb2312', 'ignore').encode('utf-8')
-                    else:
-                        CSysLog.error('encode type not add %s'%(encodeType))
-                    return pageCode
-                except Exception,e:
-                    CSysLog.warn('get page error reason: %s'%(e))
-                    fail_time +=1
-        except urllib2.URLError, e:
-            if hasattr(e, "reason"):
-                print u"connect website faild", e.reason
-                return None
 
     @classmethod
     def getPageUrlRes(cls,url,regex_pattern):
@@ -267,7 +221,11 @@ class DyttSpider(object):
                 movie_detail['movie_classify_child'] = data_type
                 movie_detail['summary_img_url'] = movie['summaryPicUrl']
                 movie_detail['content'] = Tool.getMovieContent(movie['content'])
-                movie_detail['ftp_url'] = movie['ftpUrl']
+                movie_detail['download_url'] = movie['ftpUrl']
+                movie_detail['actor'] = Tool.getCountry(movie['content'])
+                movie_detail['country'] = Tool.getActor(movie['content'])
+                movie_detail['update_time']  = Tool.getUpdatetime(movie['content'])
+                movie_detail['movie_source'] = 'dytt'
                 result.append(movie_detail)
         return result
 
@@ -285,7 +243,12 @@ class DyttSpider(object):
             movie_detail['movie_classify_child'] = "none_type"
             movie_detail['summary_img_url'] = movie['summaryPicUrl']
             movie_detail['content'] = Tool.getMovieContent(movie['content'])
-            movie_detail['ftp_url'] = movie['ftpUrl']
+            movie_detail['download_url'] = movie['ftpUrl']
+            movie_detail['actor'] = Tool.getCountry(movie['content'])
+            movie_detail['country'] = Tool.getActor(movie['content'])
+            movie_detail['update_time'] = Tool.getUpdatetime(movie['content'])
+            movie_detail['movie_source'] = 'dytt'
+
             result.append(movie_detail)
         return result
 
